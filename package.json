@@ -7,12 +7,19 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack index.js --output bundle.js --mode development",
     "build:local": "webpack",
-    "build:external": "webpack --config ./external/webpack.config.js"
+    "build:external": "webpack --config ./external/webpack.config.js",
+    "build:css": "webpack --config ./css-style-loader/webpack.config.js",
+    "build:extract:css": "webpack --config ./plugin-extract-text/webpack.config.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "webpack": "^4.29.3",
     "webpack-cli": "^3.2.3"
+  },
+  "devDependencies": {
+    "css-loader": "^2.1.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "style-loader": "^0.23.1"
   }
 }
