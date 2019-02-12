@@ -71,3 +71,7 @@ Plugins
 Estendono il funzionamento di webpack
 Per utilizzare un plugin è necessario usare require() e aggiungerlo all'array dei plugin, la maggior parte dei plugin sono personalizzabili tramite opzioni.
 E' possibile utilizzare un plugin più volte in una sola configurazione per cui è necessario creare un'istanza chiamandola con un nuovo operatore
+
+babel-loader: Da supporto ai file Javascript 
+core-babel: indica come si compilerà
+babel-present-env: indica quale standard di ECMA si utilizzerà.
