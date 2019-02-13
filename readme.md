@@ -75,3 +75,12 @@ E' possibile utilizzare un plugin più volte in una sola configurazione per cui 
 babel-loader: Da supporto ai file Javascript 
 core-babel: indica come si compilerà
 babel-present-env: indica quale standard di ECMA si utilizzerà.
+
+
+
+Quali sono i vantaggi di usare immagini a in base 64?
+Se le immagini pesano poco si può risparmiare la richiesta http
+
+[name]: Prende lo stesso nome del file originale
+[hash]: Crea un hash
+[ext]: Aggiunge la stessa estensione che hanno i file originali
