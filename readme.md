@@ -22,9 +22,17 @@ Per prima cosa si modifica la struttura del nostro prsogetto, separando il codic
 Moduli
 Gli import e gli export sono degli standard di ES2015, sebbene non sono supportati ancora da molti browser, webpack li supporta appieno e in più traspila il codice in modo tale che anche i browser lo comprenda.
 
+
 Configurazione
 Webpack non richiede più di nessuna configurazione, però, per progetti complessi si può configurare il file 
 webpack.config.js
+
+Build
+Se il file di configurazione di webpack è presente (webpack.config.js) basterà solo il comando 
+npx webpack
+
+Npm Scripts
+E' possibile creare una scorciatoia per quando vogliamo fare la build, all'interno di packaje.json, nella sezione scripts:
 
 
 

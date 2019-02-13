@@ -4,7 +4,8 @@
   "description": "Webpack ha bisogno di node.js per funzionare\r E' in grado di immagazzinare i moduli, ci permette dividere ogni modulo in sezioni diversi in modo tale che gli sviluppatori abbiamo il pieno controllo.\r E' in grado di una preparare un file javascript con al suo interno tutti il codice del nostro progetto, dipendenze include",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
