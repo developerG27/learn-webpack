@@ -1,8 +1,8 @@
 {
-  "teachers": [
+  "teachers":[
     {
-      "name": "Leonidas Esteban",
-      "twitter": "LeonidasEsteban"
+      "name": "Freddy Vega",
+      "twitter": "freddier"
     },
     {
       "name": "Sacha Lifszyc",
@@ -13,8 +13,8 @@
       "twitter": "julian_duque"
     },
     {
-      "name": "Freddy Vega",
-      "twitter": "freddier"
+      "name": "Leonidas Esteban",
+      "twitter": "LeonidasEsteban"
     }
   ]
 }

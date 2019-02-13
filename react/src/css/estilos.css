@@ -1,13 +1,14 @@
 @font-face {
   font-family: 'open_sansregular';
   src: url('../fonts/OpenSans-Regular-webfont.eot');
-  src: url('../fonts/OpenSans-Regular-webfont.svg');
-  src: url('../fonts/OpenSans-Regular-webfont.ttf');
-  src: url('../fonts/OpenSans-Regular-webfont.woff');
+  src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
+       url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+       url('../fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+  font-weight: normal;
   font-style: normal;
-  font-display: block;
-
 }
+
 
 body {
   display: flex;
@@ -20,11 +21,6 @@ body {
   flex-direction: column;
   /*background-image: url('../images/platzi.png');*/
   background-size: contain;
-  font-family: 'open_sansregular';
-  background-image: url('../images/platzi.png');
-  background-repeat: no-repeat;
-}
-
-*{
-  font-family: 'open_sansregular' !important;
+  color: white;
+  font-family: "open_sansregular";
 }
