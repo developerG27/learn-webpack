@@ -68,6 +68,34 @@ Una volta creato ad esempio il file xml si importa sempre in index.js, successiv
 Questo può essere molto utile quando utilizziamo uno strumento come d3
 
 
+Gestione degli output
+Man mano che il tuo progetto cresce sarà difficile gestire tutti i tuoi assets, 
+creiamo due file in src e li inseriamo nel file di configurazione di docker e all'output gli diamo
+[name].bundle.js: Prende lo stesso nome dell'entry e lo restituisce nell'output
+
+
+Impostazione di HtmlWebpackPlugin
+il comando per installarlo
+npm install -D html-webpack-plugin
+questo plugin genera un file html, anche se già lo abbiamo nel .dist, ciò significa che lo sostituirà
+
+Pulire la cartella ./dist
+con il comando
+npm install -D clean-webpack-plugin
+Elimina i file che non esistono più all'interno di ./dist o in qualsiasi altra cartella venga configurata
+
+
+DEVELOPMENT
+https://webpack.js.org/guides/development
+
+
+
+
+
+
+
+
+
 
 
 Per iniziare con webpack è necessario comprendere questi concetti principali:
@@ -144,7 +172,7 @@ babel-present-env: indica quale standard di ECMA si utilizzerà.
 Quali sono i vantaggi di usare immagini a in base 64?
 Se le immagini pesano poco si può risparmiare la richiesta http
 
-[name]: Prende lo stesso nome del file originale
+
 [hash]: Crea un hash
 [ext]: Aggiunge la stessa estensione che hanno i file originali
 
