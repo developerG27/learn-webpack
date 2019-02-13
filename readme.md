@@ -35,6 +35,25 @@ Npm Scripts
 E' possibile creare una scorciatoia per quando vogliamo fare la build, all'interno di packaje.json, nella sezione scripts:
 
 
+Gestione degli asset
+All'interno del nostro bundle possiamo inserire gli asset, questo comprende immagini, video e anche css.
+Per importare il css abbiamo bisogno di installare due moduli
+npm install -D style-loader css-loader
+Una volta installati dobbiamo inserirli all'interno del nostro file webpack.config.js tramiite espressioni regolari.
+Webpack utilizza queste espressioni per determinare in base all'estensione quale loader caricare.
+In questo caso abbiamo stabilito che per i file .css avremo bisogno di style-loader e css-loader.
+Ora quando ci sarà un file './style.css' verrà caricato nell'head del nostro file.
+Quindi inseriamo una regola all'interno del nostro file src/style.css e poi lo importiamo nel nostro src/index.js, una volta terminato facciamo la build con il comando che avevamo configurato precedentemente
+npm run build
+
+Caricamente delle immagini
+Per gestire le immagini si usa il modulo
+npm install --save-dev file-loader
+una volta installato il pacchetto aggiungiamo l'espressione regolare al nostro file webpack.config.js,, in questo caso gli diciamo di accettare i file che abbiano l'estensione png|svg|jpg|gif e di il file-loader per caricarlo.
+Ora puoi importare qualsiasi file con quella estensione
+
+
+
 
 Per iniziare con webpack è necessario comprendere questi concetti principali:
 Entry
