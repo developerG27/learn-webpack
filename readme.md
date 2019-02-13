@@ -13,7 +13,19 @@ npm install webpack webpack-cli --save
 
 Caratteristiche versione 4
 Webpack 4 è più veloce rispetto alla versione precedente di una media dal 60 al 98%.
-Supporto a WebAssembly: 
+Supporto a WebAssembly
+
+Creazione del bundle - il nostro file principale
+Per prima cosa si modifica la struttura del nostro prsogetto, separando il codice sorgente "src" dal nostro codice di distribuzione "dist"
+
+
+Moduli
+Gli import e gli export sono degli standard di ES2015, sebbene non sono supportati ancora da molti browser, webpack li supporta appieno e in più traspila il codice in modo tale che anche i browser lo comprenda.
+
+Configurazione
+Webpack non richiede più di nessuna configurazione, però, per progetti complessi si può configurare il file 
+webpack.config.js
+
 
 
 Per iniziare con webpack è necessario comprendere questi concetti principali:
