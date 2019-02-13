@@ -53,7 +53,12 @@ una volta installato il pacchetto aggiungiamo l'espressione regolare al nostro f
 Ora puoi importare qualsiasi file con quella estensione
 
 Ottimizzare le immagini caricate
-Esistono dei moduli in grado di ottimizzare le immagini
+Esistono dei moduli in grado di ottimizzare le immagini, questo è quello usato in questa guida
+npm install image-webpack-loader -D
+
+
+Caricamento dei font
+Grazie al modulo di file-loader possiamo anche aggiungere dei font esterni, basta aggiungere una nuova espressione regolare e facendo usare sempre lo stesso modulo in webpack.config.js
 
 
 
