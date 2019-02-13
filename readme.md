@@ -60,6 +60,13 @@ npm install image-webpack-loader -D
 Caricamento dei font
 Grazie al modulo di file-loader possiamo anche aggiungere dei font esterni, basta aggiungere una nuova espressione regolare e facendo usare sempre lo stesso modulo in webpack.config.js
 
+Caricamento dei dati: Json, CSV, TSV e XML
+E' attualmente supportato il caricamento dei file JSON, è necessario installare questo modulo
+npm install --save-dev csv-loader xml-loader
+Una volta installato il modulo si inserisci l'espressione regolare nel nostro file di configurazione e caricando i due moduli appena installati.
+Una volta creato ad esempio il file xml si importa sempre in index.js, successivamente si esegue la build e se andiamo su ispeziona elemento potremo vedere il nostro file.
+Questo può essere molto utile quando utilizziamo uno strumento come d3
+
 
 
 
