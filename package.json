@@ -1,0 +1,22 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "Webpack ha bisogno di node.js per funzionare\r E' in grado di immagazzinare i moduli, ci permette dividere ogni modulo in sezioni diversi in modo tale che gli sviluppatori abbiamo il pieno controllo.\r E' in grado di una preparare un file javascript con al suo interno tutti il codice del nostro progetto, dipendenze include",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/developerG27/learn-webpack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/developerG27/learn-webpack/issues"
+  },
+  "homepage": "https://github.com/developerG27/learn-webpack#readme",
+  "devDependencies": {
+    "webpack": "^4.29.3"
+  }
+}

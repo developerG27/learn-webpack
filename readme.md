@@ -1,7 +1,9 @@
 # WEBPACK
-Webpack ha bisogno di node.js per funzionare
 E' in grado di immagazzinare i moduli, ci permette dividere ogni modulo in sezioni diversi in modo tale che gli sviluppatori abbiamo il pieno controllo.
-E' in grado di una preparare un file javascript con al suo interno tutti il codice del nostro progetto, dipendenze include
+E' in grado di una preparare un file javascript con al suo interno tutti il codice del nostro progetto, dipendenze incluse.
+
+Prerequisiti
+Webpack ha bisogno di node.js per funzionare
 
 Installazione
 Si parte creando il file packaje.json, con il comando
