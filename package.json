@@ -17,7 +17,8 @@
     "build:fonts": "webpack --config ./url-loader-fonts/webpack.config.js",
     "build:video": "webpack --config ./file-loader-video/webpack.config.js",
     "build:json": "webpack --config ./json-loader/webpack.config.js",
-    "build:react": "webpack --config ./react/webpack.config.js"
+    "build:react": "webpack --config ./react/webpack.config.js",
+    "build:sass": "webpack --config ./sass-loader/webpack.config.js"
   },
   "author": "",
   "license": "ISC",
@@ -42,6 +43,8 @@
     "babel-preset-react": "^6.24.1",
     "css-loader": "^2.1.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "url-loader": "^1.1.2",
     "webpack-dev-server": "^3.1.14"
