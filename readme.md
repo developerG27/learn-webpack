@@ -52,6 +52,9 @@ npm install --save-dev file-loader
 una volta installato il pacchetto aggiungiamo l'espressione regolare al nostro file webpack.config.js,, in questo caso gli diciamo di accettare i file che abbiano l'estensione png|svg|jpg|gif e di il file-loader per caricarlo.
 Ora puoi importare qualsiasi file con quella estensione
 
+Ottimizzare le immagini caricate
+Esistono dei moduli in grado di ottimizzare le immagini
+
 
 
 
