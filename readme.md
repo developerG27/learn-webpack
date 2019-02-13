@@ -1,11 +1,18 @@
 # WEBPACK
-E' un raccoglitore di moduli, ci permette dividere ogni modulo in sezioni diversi in modo tale che gli sviluppatori abbiamo il pieno controllo
+Webpack ha bisogno di node.js per funzionare
+E' in grado di immagazzinare i moduli, ci permette dividere ogni modulo in sezioni diversi in modo tale che gli sviluppatori abbiamo il pieno controllo.
+E' in grado di una preparare un file javascript con al suo interno tutti il codice del nostro progetto, dipendenze include
 
 Installazione
-Si parte inserendo 
-npm init -y
-poi si installa webpack
+Si parte creando il file packaje.json, con il comando
+npm init
+Una volta generato il file si installa webpack con 
 npm install webpack webpack-cli --save
+
+Caratteristiche versione 4
+Webpack 4 è più veloce rispetto alla versione precedente di una media dal 60 al 98%.
+Supporto a WebAssembly: 
+
 
 Per iniziare con webpack è necessario comprendere questi concetti principali:
 Entry
@@ -20,7 +27,7 @@ Rutes relative
 Si può creare il nostro bundle anche in file diversi grazie al modulo di node.js path
 
 Entry
-Un entry o punto di ingresso indica a webpack da dove iniziare per richiedere i file e creare il suo grafico.
+Un entry o punto di ingresso indica a webpack da dove iniziare ad analizzare il codice, così da poter produrre il package.
 Di default il valore è
 ./src/index.js
 ma puoi facilmente cambiarlo nel file webpack.config.js
@@ -84,3 +91,8 @@ Se le immagini pesano poco si può risparmiare la richiesta http
 [name]: Prende lo stesso nome del file originale
 [hash]: Crea un hash
 [ext]: Aggiunge la stessa estensione che hanno i file originali
+
+I dll (Dynamic Link Library) servono per inserire le tue librerie in comune ad esempio jquery, così quando costruisci il tuo bundle con webpack non devi ricostruire le librerie
+
+
+Caricare moduli in modo asincrono
