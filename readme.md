@@ -86,13 +86,57 @@ Elimina i file che non esistono più all'interno di ./dist o in qualsiasi altra 
 
 
 DEVELOPMENT
-https://webpack.js.org/guides/development
+inserire all'interno di webpack.config.js
+mode: 'development'
+e successivamente
+devtool: 'inline-source-map'
+Ora la console del browser ci dirà l'errore e in quale riga si può correggere
+Ci sono diversi tipi di strumenti per lo sviluppo, ad esempio è abbastanza fastidioso eseguire il comando
+npm run build 
+ogni qual volta che si vuole compilare il codice, per questo motivo sono nate 3 configurazioni diverse:
+
+webpack watch mode
+Questa configurazione 'osserverà' ogni nuovo cambiamento e compilerà automaticamente
+creiamo un nuovo npm script all'interno del package.json
+"watch": "webpack --watch",
+L'unico nota negativa di usare questo comando è che devi aggiornare il browser ad ogni cambio.
+
+webpack-dev-serve
+In assouluto il più usato e la sua caratteristica è che ti fornisce il caricamento in tempo reale, bisogna installarlo con
+npm install -D webpack-dev-server
+una volta installato si cambia il webpack.config.js e si aggiunge 
+devServer: {
+  contentBase: './dist'
+},
+Questa istruzione dice a webpack di eseguire i file in .dist all'interno della porta 8080
+
+webpack-dev-middleware
+Questo modulo si trova all'interno di webpack server ma si può trovare anche come modulo separato in modo tale da poterlo personalizzare, per poterlo utilizzare si installa con
+npm install -D express webpack-dev-middleware
+Ora si configura il server express e si aggiunge il npm script
+
+Hot module Replacement
+Questo funzionalità deve essere solo usata in sviluppo e mai in produzione
+E' una delle funzionalità più utili di webpack e permette di sostituire solo le parti che sono state modificate.
+Webpack utilizza il HotModuleReplacementPlugin per generare un Manifest, ossia un Json contenente la lista dei moduli Per poter utilizzare questi mduli di sono diverse librerie, per i css, react, vue ecc
+
+Eliminazione di codice morti
+E' un concetto molto comune in Javascript quando si fa l'import e l'export dei dati se non vengono utilizzati
+
+Modalità produzione
+Con questo comando l'interno pacchetto viene minificato
+
+Suddivisione del codice
+Puoi dividere il tuo codice in diversi pacchetti
 
 
-
-
-
-
+npm init: fa partire un progetto JS
+estrarre file css: extract-text-webpack-plugin
+Cosa succede quando il peso supera il "limit" url-loader: si esportano i file nella cartella dist
+Cos'è common.js: il sistema di moduli di node.js
+con quale flag si può caricare un file da un altra cartella? --output
+imprimere stili nel nostro browser: style-loader
+npm list webpack: cerca webpack come dipendenza non globale
 
 
 
